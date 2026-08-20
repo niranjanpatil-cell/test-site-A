@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Tracking Test WebsiteA</title>
+    <title>Tracking Test Website A</title>
 
     <!-- Google Tag Manager -->
     <script>
@@ -48,18 +48,19 @@
             margin-bottom: 30px;
         }
 
-        button {
+        #sitebLink {
+            display: inline-block;
             background: #16833a;
             color: white;
-            border: none;
             padding: 14px 28px;
             font-size: 16px;
             font-weight: bold;
             border-radius: 8px;
             cursor: pointer;
+            text-decoration: none;
         }
 
-        button:hover {
+        #sitebLink:hover {
             background: #0f642c;
         }
     </style>
@@ -71,30 +72,30 @@
     <!-- Google Tag Manager (noscript) -->
     <noscript>
         <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NTCLJJHR"
-        height="0" width="0" style="display:none;visibility:hidden"></iframe>
+        height="0"
+        width="0"
+        style="display:none;visibility:hidden">
+        </iframe>
     </noscript>
     <!-- End Google Tag Manager (noscript) -->
+
 
     <div class="container">
 
         <h1>Tracking Test Website A</h1>
 
-        <p>This website is being used for cross-domain tracking testing.</p>
+        <p>
+            This website is being used for cross-domain tracking testing.
+        </p>
 
-        <button id="sitebButton">
+        <a
+            id="sitebLink"
+            href="https://ornate-granita-dcaae9.netlify.app/"
+        >
             Go to Site B
-        </button>
+        </a>
 
     </div>
-
-    <script>
-    document.getElementById("sitebButton").addEventListener("click", function () {
-        window.open(
-            "https://ornate-granita-dcaae9.netlify.app/",
-            "_blank"
-        );
-    });
-</script>
 
 </body>
 </html>
